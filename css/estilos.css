@@ -32,6 +32,7 @@ header .menu{
    
 }
 
+
 .a21 {
     margin-top: 40px;
     margin-right: 50px;
@@ -60,10 +61,14 @@ header .contenedor-texto {
     font-size: 50px;
     font-weight: 5000;
     margin: 0;
+    line-height: 1;
+    
 }
 .profesion {
     font-size: 30px;
     line-height: 50px;
+    line-height: 1;
+    
 }
 
 /*--    Main --*/
@@ -296,4 +301,33 @@ footer .redes-sociales .instagram:hover {
 
 footer .redes-sociales .linkedin:hover {
     background: #0077b5; 
+}
+
+/*-------Media Queries --------- */
+@media screen and (max-width: 800px){
+    header .contenedor{
+
+        text-align: center;
+    } 
+
+    .main .trabajos .contenedor-trabajos .trabajo{
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header .contenedor-texto .texto .nombre{
+        
+        font-size: 35px;
+
+    }
+
+    header .contenedor-texto .texto .profesion{
+        font-size: 18px;
+        
+    }
+    footer .redes-sociales .contenedor{
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
 }
