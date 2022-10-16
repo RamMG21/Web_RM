@@ -1,0 +1,325 @@
+*{
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+
+     /* Ruta relativa o completa a la imagen */
+     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/shallow-focus-shot-of-prickly-pear-cactus.jpg);
+     /* Centramos el fondo horizontal y verticalmente */
+     background-position: center center;
+     /* El fonde no se repite */
+     background-repeat: no-repeat;
+     /* Fijamos la imagen a la ventana para que no supere el alto de la ventana */
+     background-attachment: fixed;
+     /* El fonde se re-escala automáticamente */
+     background-size: cover;
+     /* Color de fondo si la imagen no se encuentra o mientras se está cargando */
+     background-color: #FFF;
+     /* Fuente para el texto */
+     text-align: center;
+     color: #000;
+     font-family: "Times New Roman", Times, serif;
+     height: 100vh;
+
+
+}
+
+.container{
+     
+    /*background-size: cover;*/
+    /*background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/shallow-focus-shot-of-prickly-pear-cactus.jpg);*/
+    max-width:max-content;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding-left: 10%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    /*background-size: cover;
+    background-attachment: fixed;
+    background-position: center;*/
+    
+}
+
+.navbar{
+    height: 12%;
+    display:flex;
+    align-items: center;
+}
+
+.menu a:hover {
+	border-bottom: 2px solid #8a8a8b;
+    transition: transform 0.5s;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+   text-align: right; 
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+
+}
+.Encabezado{
+    width: 100%;
+    /*border: 5px solid darkblue;*/
+    text-align: center;
+}
+
+.row{
+    /*border: 5px solid darkblue;*/
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    
+}
+
+
+
+.cards{
+    /*overflow: hidden;*/
+    max-width: 100%;
+    align-items: center;
+    width: 1000px;
+    height: 500px;
+    flex-wrap: wrap;
+    /*border: 5px solid darkblue;esta linea de codigo es utilizada para saber a la visat el tamanio de nustros div */
+    /*flex-basis: 50%;*/
+    display: flex;
+    padding-right: 10%;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+h1{
+    position: center;
+    top: 10px;
+    color: #fff;
+    font-size: 50px;
+    
+}
+
+p{
+    position: relative;
+    top: 10px;
+    text-align:justify;
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    line-height: 15px;
+    word-wrap: break-word;
+}
+
+button{
+    position: static;
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card{
+    
+    max-width:100%;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+    /*transform: rotateY(-25deg);*/
+   
+}
+
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    background-color: #19191A;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.card1{
+    flex-wrap: wrap;
+    background-image: url(img/DSC_0846.jpg);
+   /* transform: translate(-50%, -50%); */
+    
+}
+.card1:hover {
+   
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card2{
+   
+    flex-wrap: wrap;
+    background-image: url(img/stack-of-books-with-pencil-holder-and-glasses-against-chalkboard.jpg);
+}
+.card2:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+/*.card3{
+    flex-wrap: wrap;
+    background-image: url(img/5083803_2650401.jpg);
+}
+.card3:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}*/
+
+.card4-3{
+    flex-wrap: wrap;
+    background-image: url(img/7454200_3659672.jpg);
+}
+.card4-3:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.card5{
+    flex-wrap: wrap;
+    background-image: url(img/13295448_51194862.jpg);
+}
+.card5:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.card6{
+    flex-wrap: wrap;
+    background-image: url(img/ousa-chea-gKUC4TMhOiY-unsplash.jpg);
+}
+.card6:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card7{
+    flex-wrap: wrap;
+    background-image: url(img/Unofficial_JavaScript_logo_2.svg.png);
+}
+.card7:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card8{
+    flex-wrap: wrap;
+    background-image: url(img/Python-Symbol.png);
+}
+.card8:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card9{
+    flex-wrap: wrap;
+    background-image: url(img/Csharp_Logo.png);
+}
+.card9:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card10{
+    flex-wrap: wrap;
+    background-image: url(img/Java-Logo.png);
+}
+.card10:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card11{
+    flex-wrap: wrap;
+    background-image: url(img/channels4_profile.jpg);
+}
+.card11:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card12{
+    flex-wrap: wrap;
+    background-image: url(img/unnamed.png);
+}
+.card12:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card13{
+    flex-wrap: wrap;
+    background-image: url(img/Twitter_Logo_White_On_Blue.png);
+}
+.card13:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card14{
+    flex-wrap: wrap;
+    background-image: url(img/Instagram-1.jpg);
+}
+.card14:hover {
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+.card15{
+    flex-wrap: wrap;
+    background-image: url(img/Google\ Developer\ Student\ Club.webp);
+}
+.card15:hover {
+  
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+
+
+.card:hover{
+   /* transform: translate(-50%, -50%) rotateY(180deg); */
+    transform: translateY(-10px);
+   
+}
+
+h5{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px #999;
+}
+
+.card p{
+    text-shadow: 0 0 15px #000;
+    font-size:8px ;
+}
