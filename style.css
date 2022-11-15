@@ -185,7 +185,7 @@ button{
 
 .card1{
     flex-wrap: wrap;
-    background-image: url(img/DSC_0846.jpg);
+    background-image: url(img/Captura\ de\ pantalla\ 2022-04-25\ 204210.png);
    /* transform: translate(-50%, -50%); */
     
 }
@@ -289,12 +289,12 @@ button{
     box-shadow: 0 25px 40px rgba(0,0,0,0.5);
 }
 
-/*
+
 .card14{
     flex-wrap: wrap;
     background-image: url(img/Instagram-1.jpg);
 }
-*/
+
 .card14:hover {
     box-shadow: 0 25px 40px rgba(0,0,0,0.5);
 }
